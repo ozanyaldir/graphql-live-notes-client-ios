@@ -1,0 +1,68 @@
+
+query ListUsers {
+  users {
+    id
+    username
+    createdAt
+    notes {
+      id
+      text
+      createdAt
+    }
+  }
+}
+
+
+query GetUser($userId: ID!) {
+  user(id: $userId) {
+    id
+    username
+    createdAt
+    notes {
+      id
+      text
+      createdAt
+    }
+  }
+}
+
+
+query GetMe {
+  me {
+    id
+    username
+    createdAt
+    notes {
+      id
+      text
+      createdAt
+    }
+  }
+}
+
+
+query ListNotes {
+  notes {
+    id
+    text
+    createdAt
+    user {
+      id
+      username
+      createdAt
+    }
+  }
+}
+
+query GetNote($noteId: ID!) {
+  note(id: $noteId) {
+    id
+    text
+    createdAt
+    user {
+      id
+      username
+      createdAt
+    }
+  }
+}

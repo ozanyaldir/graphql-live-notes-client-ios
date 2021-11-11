@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>GRAPH_ENDPOINT</key>
+	<string>https://graphql-live-notes.herokuapp.com/graphql</string>
+</dict>
+</plist>
