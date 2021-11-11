@@ -13,11 +13,8 @@
 		DA0DBDD3273D4CDC008E6DBC /* NoteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0DBDD2273D4CDC008E6DBC /* NoteListViewModel.swift */; };
 		DA0DBDD5273D4F2D008E6DBC /* NoteDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0DBDD4273D4F2D008E6DBC /* NoteDetailViewModel.swift */; };
 		DA7A974F272AE1A500569CC3 /* graphql_live_notesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A974E272AE1A500569CC3 /* graphql_live_notesApp.swift */; };
-		DA7A9751272AE1A500569CC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A9750272AE1A500569CC3 /* ContentView.swift */; };
 		DA7A9753272AE1B100569CC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7A9752272AE1B100569CC3 /* Assets.xcassets */; };
 		DA7A9756272AE1B100569CC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7A9755272AE1B100569CC3 /* Preview Assets.xcassets */; };
-		DA7A9758272AE1B100569CC3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A9757272AE1B100569CC3 /* Persistence.swift */; };
-		DA7A975B272AE1B100569CC3 /* graphql_live_notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA7A9759272AE1B100569CC3 /* graphql_live_notes.xcdatamodeld */; };
 		DA7A9765272AE1B200569CC3 /* graphql_live_notesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A9764272AE1B200569CC3 /* graphql_live_notesTests.swift */; };
 		DA7A976F272AE1B200569CC3 /* graphql_live_notesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A976E272AE1B200569CC3 /* graphql_live_notesUITests.swift */; };
 		DA7A9771272AE1B200569CC3 /* graphql_live_notesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A9770272AE1B200569CC3 /* graphql_live_notesUITestsLaunchTests.swift */; };
@@ -64,11 +61,8 @@
 		DA0DBDD4273D4F2D008E6DBC /* NoteDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewModel.swift; sourceTree = "<group>"; };
 		DA7A974B272AE1A500569CC3 /* graphql-live-notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "graphql-live-notes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7A974E272AE1A500569CC3 /* graphql_live_notesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = graphql_live_notesApp.swift; sourceTree = "<group>"; };
-		DA7A9750272AE1A500569CC3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA7A9752272AE1B100569CC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA7A9755272AE1B100569CC3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DA7A9757272AE1B100569CC3 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		DA7A975A272AE1B100569CC3 /* graphql_live_notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = graphql_live_notes.xcdatamodel; sourceTree = "<group>"; };
 		DA7A9760272AE1B200569CC3 /* graphql-live-notesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "graphql-live-notesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7A9764272AE1B200569CC3 /* graphql_live_notesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = graphql_live_notesTests.swift; sourceTree = "<group>"; };
 		DA7A976A272AE1B200569CC3 /* graphql-live-notesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "graphql-live-notesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +134,18 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		DA21632E273D7CF1003C61EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DAF6318C273C6A6400754F20 /* MainView.swift */,
+				DAF6318A273C68F700754F20 /* NoteListView.swift */,
+				DAF6318E273C6C4300754F20 /* NoteDetailView.swift */,
+				DAF63186273C49C000754F20 /* UserListView.swift */,
+				DAF63188273C522200754F20 /* UserDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DA7A9742272AE1A500569CC3 = {
 			isa = PBXGroup;
 			children = (
@@ -165,19 +171,12 @@
 		DA7A974D272AE1A500569CC3 /* graphql-live-notes */ = {
 			isa = PBXGroup;
 			children = (
+				DA21632E273D7CF1003C61EF /* Views */,
 				DAF63190273D2EB100754F20 /* ViewModels */,
 				DA953805273C1FC30030180B /* GraphQL */,
 				DA953804273C1DB00030180B /* Info.plist */,
 				DA7A974E272AE1A500569CC3 /* graphql_live_notesApp.swift */,
-				DAF6318C273C6A6400754F20 /* MainView.swift */,
-				DA7A9750272AE1A500569CC3 /* ContentView.swift */,
-				DAF6318A273C68F700754F20 /* NoteListView.swift */,
-				DAF6318E273C6C4300754F20 /* NoteDetailView.swift */,
-				DAF63186273C49C000754F20 /* UserListView.swift */,
-				DAF63188273C522200754F20 /* UserDetailView.swift */,
 				DA7A9752272AE1B100569CC3 /* Assets.xcassets */,
-				DA7A9757272AE1B100569CC3 /* Persistence.swift */,
-				DA7A9759272AE1B100569CC3 /* graphql_live_notes.xcdatamodeld */,
 				DA7A9754272AE1B100569CC3 /* Preview Content */,
 			);
 			path = "graphql-live-notes";
@@ -444,7 +443,7 @@
 		};
 		DA953803273C1B850030180B /* Generate Apollo GraphQL Schema */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputFileListPaths = (
@@ -456,7 +455,7 @@
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "SCRIPT_PATH=\"${PODS_ROOT}/Apollo/scripts\"\ncd \"${SRCROOT}/${TARGET_NAME}/GraphQL\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh schema:download --endpoint=https://graphql-live-notes.herokuapp.com/graphql schema.json\n\n# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n\n";
 		};
@@ -493,11 +492,8 @@
 				DAF63192273D2EC500754F20 /* UserListViewModel.swift in Sources */,
 				DA0DBDD5273D4F2D008E6DBC /* NoteDetailViewModel.swift in Sources */,
 				DABCB0F5272CCE6200357AB4 /* Network.swift in Sources */,
-				DA7A9758272AE1B100569CC3 /* Persistence.swift in Sources */,
 				DAF6318D273C6A6400754F20 /* MainView.swift in Sources */,
-				DA7A975B272AE1B100569CC3 /* graphql_live_notes.xcdatamodeld in Sources */,
 				DAF63189273C522200754F20 /* UserDetailView.swift in Sources */,
-				DA7A9751272AE1A500569CC3 /* ContentView.swift in Sources */,
 				DAF6318F273C6C4300754F20 /* NoteDetailView.swift in Sources */,
 				DAF63185273C480900754F20 /* API.swift in Sources */,
 				DAF6318B273C68F700754F20 /* NoteListView.swift in Sources */,
@@ -862,19 +858,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		DA7A9759272AE1B100569CC3 /* graphql_live_notes.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				DA7A975A272AE1B100569CC3 /* graphql_live_notes.xcdatamodel */,
-			);
-			currentVersion = DA7A975A272AE1B100569CC3 /* graphql_live_notes.xcdatamodel */;
-			path = graphql_live_notes.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = DA7A9743272AE1A500569CC3 /* Project object */;
 }

@@ -16,13 +16,14 @@ struct NoteDetailView: View {
         NavigationView {
             VStack{
                 HStack{
-                    Text("Username: " + (noteDetailVM.user?.username ?? "")).bold()
+                    Text("Username: " + (noteDetailVM.text)).bold()
                 }
             }
             .onAppear {
                 noteDetailVM.getNoteDetail(noteId: noteId)
             }
-            .navigationBarTitle(Text(self.noteDetailVM.text), displayMode: .inline)
+            .navigationTitle("\(self.noteDetailVM.user?.username ?? "")")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
