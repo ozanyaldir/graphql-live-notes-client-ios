@@ -13,15 +13,15 @@ import Network
 
 struct MainView: View {
     var body: some View {
+//        LoginView()
         TabView {
-            UserListView()
-                .tabItem {
-                    Label("Users", systemImage: "list.dash")
-                }
-            
             NoteListView()
                 .tabItem {
                     Label("Notes", systemImage: "square.and.pencil")
+                }
+            UserListView()
+                .tabItem {
+                    Label("Users", systemImage: "list.dash")
                 }
         }
     }

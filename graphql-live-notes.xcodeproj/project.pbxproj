@@ -20,7 +20,10 @@
 		DA7A9771272AE1B200569CC3 /* graphql_live_notesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A9770272AE1B200569CC3 /* graphql_live_notesUITestsLaunchTests.swift */; };
 		DA953809273C1FFB0030180B /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = DA953808273C1FFB0030180B /* schema.json */; };
 		DA95380D273C21500030180B /* Queries.graphql in Resources */ = {isa = PBXBuildFile; fileRef = DA95380C273C21500030180B /* Queries.graphql */; };
+		DAB870FF273DB8B500E81595 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB870FE273DB8B500E81595 /* LoginView.swift */; };
 		DABCB0F5272CCE6200357AB4 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABCB0F4272CCE6200357AB4 /* Network.swift */; };
+		DABD17A9273F1A0D0079DA39 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD17A8273F1A0D0079DA39 /* Constants.swift */; };
+		DABD17AB273F1DCA0079DA39 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD17AA273F1DCA0079DA39 /* KeychainHelper.swift */; };
 		DAF63185273C480900754F20 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF63184273C480900754F20 /* API.swift */; };
 		DAF63187273C49C000754F20 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF63186273C49C000754F20 /* UserListView.swift */; };
 		DAF63189273C522200754F20 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF63188273C522200754F20 /* UserDetailView.swift */; };
@@ -71,7 +74,10 @@
 		DA953804273C1DB00030180B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DA953808273C1FFB0030180B /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		DA95380C273C21500030180B /* Queries.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Queries.graphql; sourceTree = "<group>"; };
+		DAB870FE273DB8B500E81595 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		DABCB0F4272CCE6200357AB4 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		DABD17A8273F1A0D0079DA39 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DABD17AA273F1DCA0079DA39 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
 		DAF63184273C480900754F20 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		DAF63186273C49C000754F20 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		DAF63188273C522200754F20 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
@@ -142,6 +148,7 @@
 				DAF6318E273C6C4300754F20 /* NoteDetailView.swift */,
 				DAF63186273C49C000754F20 /* UserListView.swift */,
 				DAF63188273C522200754F20 /* UserDetailView.swift */,
+				DAB870FE273DB8B500E81595 /* LoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,6 +178,7 @@
 		DA7A974D272AE1A500569CC3 /* graphql-live-notes */ = {
 			isa = PBXGroup;
 			children = (
+				DABD17A7273F19E40079DA39 /* Utils */,
 				DA21632E273D7CF1003C61EF /* Views */,
 				DAF63190273D2EB100754F20 /* ViewModels */,
 				DA953805273C1FC30030180B /* GraphQL */,
@@ -216,6 +224,15 @@
 				DABCB0F4272CCE6200357AB4 /* Network.swift */,
 			);
 			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		DABD17A7273F19E40079DA39 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DABD17A8273F1A0D0079DA39 /* Constants.swift */,
+				DABD17AA273F1DCA0079DA39 /* KeychainHelper.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		DAF63190273D2EB100754F20 /* ViewModels */ = {
@@ -498,7 +515,10 @@
 				DAF63185273C480900754F20 /* API.swift in Sources */,
 				DAF6318B273C68F700754F20 /* NoteListView.swift in Sources */,
 				DA7A974F272AE1A500569CC3 /* graphql_live_notesApp.swift in Sources */,
+				DAB870FF273DB8B500E81595 /* LoginView.swift in Sources */,
+				DABD17A9273F1A0D0079DA39 /* Constants.swift in Sources */,
 				DA0DBDD3273D4CDC008E6DBC /* NoteListViewModel.swift in Sources */,
+				DABD17AB273F1DCA0079DA39 /* KeychainHelper.swift in Sources */,
 				DAF63194273D336600754F20 /* UserDetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
