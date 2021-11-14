@@ -66,3 +66,4 @@ query GetNote($noteId: ID!) {
     }
   }
 }
+

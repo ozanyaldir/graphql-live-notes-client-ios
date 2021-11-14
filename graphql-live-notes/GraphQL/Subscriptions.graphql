@@ -1,0 +1,13 @@
+
+subscription WatchNewNotes($userId: ID) {
+  note(user_id: $userId) {
+    id
+    text
+    createdAt
+    user {
+      id
+      username
+      createdAt
+    }
+  }
+}

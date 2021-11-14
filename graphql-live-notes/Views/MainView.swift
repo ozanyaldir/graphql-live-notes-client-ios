@@ -6,14 +6,14 @@
 //
 
 import Foundation
-
 import SwiftUI
-import CoreData
-import Network
+
 
 struct MainView: View {
+    
+    @EnvironmentObject var authentication: Authentication
+    
     var body: some View {
-//        LoginView()
         TabView {
             NoteListView()
                 .tabItem {
@@ -24,7 +24,9 @@ struct MainView: View {
                     Label("Users", systemImage: "list.dash")
                 }
         }
+        
     }
+    
 }
 
 struct MainView_Previews: PreviewProvider{
@@ -32,3 +34,4 @@ struct MainView_Previews: PreviewProvider{
         MainView()
     }
 }
+

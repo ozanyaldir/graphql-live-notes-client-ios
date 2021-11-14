@@ -12,6 +12,12 @@
 		3E7AD97B601D5F35F940F3C5 /* Pods_graphql_live_notes_graphql_live_notesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7852387F2DCD8E978846DD2 /* Pods_graphql_live_notes_graphql_live_notesUITests.framework */; };
 		DA0DBDD3273D4CDC008E6DBC /* NoteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0DBDD2273D4CDC008E6DBC /* NoteListViewModel.swift */; };
 		DA0DBDD5273D4F2D008E6DBC /* NoteDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0DBDD4273D4F2D008E6DBC /* NoteDetailViewModel.swift */; };
+		DA5309F327400A9F00966C69 /* ErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5309F227400A9F00966C69 /* ErrorViewModel.swift */; };
+		DA5309F52740614300966C69 /* Mutations.graphql in Resources */ = {isa = PBXBuildFile; fileRef = DA5309F42740614300966C69 /* Mutations.graphql */; };
+		DA5309F72740617100966C69 /* Query + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5309F62740617100966C69 /* Query + Extensions.swift */; };
+		DA5309FA2740622500966C69 /* NoteUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5309F92740622500966C69 /* NoteUser.swift */; };
+		DA5309FC274064AC00966C69 /* UserNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5309FB274064AC00966C69 /* UserNote.swift */; };
+		DA5309FE2740659200966C69 /* Subscriptions.graphql in Resources */ = {isa = PBXBuildFile; fileRef = DA5309FD2740659200966C69 /* Subscriptions.graphql */; };
 		DA7A974F272AE1A500569CC3 /* graphql_live_notesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A974E272AE1A500569CC3 /* graphql_live_notesApp.swift */; };
 		DA7A9753272AE1B100569CC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7A9752272AE1B100569CC3 /* Assets.xcassets */; };
 		DA7A9756272AE1B100569CC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7A9755272AE1B100569CC3 /* Preview Assets.xcassets */; };
@@ -21,6 +27,9 @@
 		DA953809273C1FFB0030180B /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = DA953808273C1FFB0030180B /* schema.json */; };
 		DA95380D273C21500030180B /* Queries.graphql in Resources */ = {isa = PBXBuildFile; fileRef = DA95380C273C21500030180B /* Queries.graphql */; };
 		DAB870FF273DB8B500E81595 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB870FE273DB8B500E81595 /* LoginView.swift */; };
+		DAB9816D273FB6E200EF35EC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB9816C273FB6E200EF35EC /* LoginViewModel.swift */; };
+		DAB9816F273FD3D200EF35EC /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB9816E273FD3D200EF35EC /* Authentication.swift */; };
+		DAB98171273FD64C00EF35EC /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB98170273FD64C00EF35EC /* UIApplication+Extension.swift */; };
 		DABCB0F5272CCE6200357AB4 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABCB0F4272CCE6200357AB4 /* Network.swift */; };
 		DABD17A9273F1A0D0079DA39 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD17A8273F1A0D0079DA39 /* Constants.swift */; };
 		DABD17AB273F1DCA0079DA39 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD17AA273F1DCA0079DA39 /* KeychainHelper.swift */; };
@@ -32,6 +41,7 @@
 		DAF6318F273C6C4300754F20 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF6318E273C6C4300754F20 /* NoteDetailView.swift */; };
 		DAF63192273D2EC500754F20 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF63191273D2EC400754F20 /* UserListViewModel.swift */; };
 		DAF63194273D336600754F20 /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF63193273D336600754F20 /* UserDetailViewModel.swift */; };
+		DAF8534D27419D1500F4643C /* NoteListNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF8534C27419D1500F4643C /* NoteListNote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +72,12 @@
 		B7852387F2DCD8E978846DD2 /* Pods_graphql_live_notes_graphql_live_notesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_graphql_live_notes_graphql_live_notesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0DBDD2273D4CDC008E6DBC /* NoteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewModel.swift; sourceTree = "<group>"; };
 		DA0DBDD4273D4F2D008E6DBC /* NoteDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewModel.swift; sourceTree = "<group>"; };
+		DA5309F227400A9F00966C69 /* ErrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewModel.swift; sourceTree = "<group>"; };
+		DA5309F42740614300966C69 /* Mutations.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Mutations.graphql; sourceTree = "<group>"; };
+		DA5309F62740617100966C69 /* Query + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Query + Extensions.swift"; sourceTree = "<group>"; };
+		DA5309F92740622500966C69 /* NoteUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteUser.swift; sourceTree = "<group>"; };
+		DA5309FB274064AC00966C69 /* UserNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNote.swift; sourceTree = "<group>"; };
+		DA5309FD2740659200966C69 /* Subscriptions.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Subscriptions.graphql; sourceTree = "<group>"; };
 		DA7A974B272AE1A500569CC3 /* graphql-live-notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "graphql-live-notes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7A974E272AE1A500569CC3 /* graphql_live_notesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = graphql_live_notesApp.swift; sourceTree = "<group>"; };
 		DA7A9752272AE1B100569CC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,6 +91,9 @@
 		DA953808273C1FFB0030180B /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		DA95380C273C21500030180B /* Queries.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Queries.graphql; sourceTree = "<group>"; };
 		DAB870FE273DB8B500E81595 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		DAB9816C273FB6E200EF35EC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		DAB9816E273FD3D200EF35EC /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		DAB98170273FD64C00EF35EC /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		DABCB0F4272CCE6200357AB4 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		DABD17A8273F1A0D0079DA39 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DABD17AA273F1DCA0079DA39 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
@@ -86,6 +105,7 @@
 		DAF6318E273C6C4300754F20 /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
 		DAF63191273D2EC400754F20 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		DAF63193273D336600754F20 /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
+		DAF8534C27419D1500F4643C /* NoteListNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListNote.swift; sourceTree = "<group>"; };
 		F66068787A3567161D38180E /* Pods-graphql-live-notes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-graphql-live-notes.debug.xcconfig"; path = "Target Support Files/Pods-graphql-live-notes/Pods-graphql-live-notes.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,6 +173,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		DA5309F8274061EE00966C69 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DA5309F92740622500966C69 /* NoteUser.swift */,
+				DA5309FB274064AC00966C69 /* UserNote.swift */,
+				DAF8534C27419D1500F4643C /* NoteListNote.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		DA7A9742272AE1A500569CC3 = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +208,7 @@
 		DA7A974D272AE1A500569CC3 /* graphql-live-notes */ = {
 			isa = PBXGroup;
 			children = (
+				DA5309F8274061EE00966C69 /* Protocols */,
 				DABD17A7273F19E40079DA39 /* Utils */,
 				DA21632E273D7CF1003C61EF /* Views */,
 				DAF63190273D2EB100754F20 /* ViewModels */,
@@ -222,6 +253,8 @@
 				DAF63184273C480900754F20 /* API.swift */,
 				DA95380C273C21500030180B /* Queries.graphql */,
 				DABCB0F4272CCE6200357AB4 /* Network.swift */,
+				DA5309F42740614300966C69 /* Mutations.graphql */,
+				DA5309FD2740659200966C69 /* Subscriptions.graphql */,
 			);
 			path = GraphQL;
 			sourceTree = "<group>";
@@ -231,6 +264,9 @@
 			children = (
 				DABD17A8273F1A0D0079DA39 /* Constants.swift */,
 				DABD17AA273F1DCA0079DA39 /* KeychainHelper.swift */,
+				DAB9816E273FD3D200EF35EC /* Authentication.swift */,
+				DAB98170273FD64C00EF35EC /* UIApplication+Extension.swift */,
+				DA5309F62740617100966C69 /* Query + Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -242,6 +278,8 @@
 				DAF63193273D336600754F20 /* UserDetailViewModel.swift */,
 				DA0DBDD2273D4CDC008E6DBC /* NoteListViewModel.swift */,
 				DA0DBDD4273D4F2D008E6DBC /* NoteDetailViewModel.swift */,
+				DAB9816C273FB6E200EF35EC /* LoginViewModel.swift */,
+				DA5309F227400A9F00966C69 /* ErrorViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -358,8 +396,10 @@
 			files = (
 				DA7A9756272AE1B100569CC3 /* Preview Assets.xcassets in Resources */,
 				DA953809273C1FFB0030180B /* schema.json in Resources */,
+				DA5309FE2740659200966C69 /* Subscriptions.graphql in Resources */,
 				DA95380D273C21500030180B /* Queries.graphql in Resources */,
 				DA7A9753272AE1B100569CC3 /* Assets.xcassets in Resources */,
+				DA5309F52740614300966C69 /* Mutations.graphql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,7 +500,7 @@
 		};
 		DA953803273C1B850030180B /* Generate Apollo GraphQL Schema */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -472,7 +512,7 @@
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "SCRIPT_PATH=\"${PODS_ROOT}/Apollo/scripts\"\ncd \"${SRCROOT}/${TARGET_NAME}/GraphQL\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh schema:download --endpoint=https://graphql-live-notes.herokuapp.com/graphql schema.json\n\n# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n\n";
 		};
@@ -506,17 +546,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAF63187273C49C000754F20 /* UserListView.swift in Sources */,
+				DA5309FA2740622500966C69 /* NoteUser.swift in Sources */,
+				DAF8534D27419D1500F4643C /* NoteListNote.swift in Sources */,
 				DAF63192273D2EC500754F20 /* UserListViewModel.swift in Sources */,
 				DA0DBDD5273D4F2D008E6DBC /* NoteDetailViewModel.swift in Sources */,
 				DABCB0F5272CCE6200357AB4 /* Network.swift in Sources */,
+				DAB98171273FD64C00EF35EC /* UIApplication+Extension.swift in Sources */,
+				DAB9816D273FB6E200EF35EC /* LoginViewModel.swift in Sources */,
+				DA5309F327400A9F00966C69 /* ErrorViewModel.swift in Sources */,
 				DAF6318D273C6A6400754F20 /* MainView.swift in Sources */,
 				DAF63189273C522200754F20 /* UserDetailView.swift in Sources */,
+				DA5309FC274064AC00966C69 /* UserNote.swift in Sources */,
 				DAF6318F273C6C4300754F20 /* NoteDetailView.swift in Sources */,
+				DAB9816F273FD3D200EF35EC /* Authentication.swift in Sources */,
 				DAF63185273C480900754F20 /* API.swift in Sources */,
 				DAF6318B273C68F700754F20 /* NoteListView.swift in Sources */,
 				DA7A974F272AE1A500569CC3 /* graphql_live_notesApp.swift in Sources */,
 				DAB870FF273DB8B500E81595 /* LoginView.swift in Sources */,
 				DABD17A9273F1A0D0079DA39 /* Constants.swift in Sources */,
+				DA5309F72740617100966C69 /* Query + Extensions.swift in Sources */,
 				DA0DBDD3273D4CDC008E6DBC /* NoteListViewModel.swift in Sources */,
 				DABD17AB273F1DCA0079DA39 /* KeychainHelper.swift in Sources */,
 				DAF63194273D336600754F20 /* UserDetailViewModel.swift in Sources */,

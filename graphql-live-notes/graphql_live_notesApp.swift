@@ -10,9 +10,20 @@ import SwiftUI
 @main
 struct graphql_live_notesApp: App {
     
+    @StateObject var authentication = Authentication()
+    
     var body: some Scene {
         WindowGroup {
-            MainView()
+            if authentication.isLoggedIn ?? false {
+                withAnimation {
+                    MainView().environmentObject(authentication)
+                }
+            }
+            else{
+                withAnimation {
+                    LoginView().environmentObject(authentication)
+                }
+            }
         }
     }
 }

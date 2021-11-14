@@ -24,29 +24,30 @@ struct NoteListView: View {
 //                            }
 //                            .flip()
 //                        }
-                        if note.user.id == "6170a33f1b587b2cec7cca37"{
+//                        if note.user?.id == "6170a33f1b587b2cec7cca37"{
+//                            HStack{
+//                                Spacer(minLength: 20)
+//                                Text("\(note.text)")
+//                            }
+//                            .flip()
+//                        } else{
                             HStack{
-                                Spacer(minLength: 20)
                                 Text("\(note.text)")
+                                Spacer(minLength: 20)
                             }
                             .flip()
-                        } else{
-                            HStack{
-                                Text("\(note.text)")
-                                Spacer(minLength: 20)
-                            }
-                            .flip()
-                        }
+//                        }
                     }
                     .listRowSeparator(.hidden)
                 }
                 .flip()
                 .listStyle(.plain)
             }
-            .onAppear {
-                noteListVM.getNoteList()
-            }
             .navigationBarTitle(Text("Notes"), displayMode: .inline)
+        }
+        .onAppear {
+            noteListVM.getNoteList()
+            noteListVM.watchNewNotes()
         }
     }
 }

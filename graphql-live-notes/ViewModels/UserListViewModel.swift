@@ -33,7 +33,7 @@ class UserListViewModel: ObservableObject{
 struct UserListUserViewModel{
     fileprivate let user: ListUsersQuery.Data.User
     
-    var id: String{
+    var id: GraphQLID{
         user.id
     }
     var username: String{
@@ -50,7 +50,7 @@ struct UserListUserViewModel{
 struct UserListNoteViewModel {
     fileprivate let note: ListUsersQuery.Data.User.Note
     
-    var id: String{
+    var id: GraphQLID{
         note.id
     }
     var text: String{

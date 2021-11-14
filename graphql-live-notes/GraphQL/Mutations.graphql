@@ -1,0 +1,19 @@
+
+mutation SignIn($data: SignInInput!) {
+  signIn(data: $data) {
+    token
+  }
+}
+
+mutation SignUp($data: SignUpInput!) {
+  signUp(data: $data) {
+    token
+  }
+}
+
+mutation createNote($data: CreateNoteInput!) {
+  createNote(data: $data) {
+    text,
+    createdAt
+  }
+}

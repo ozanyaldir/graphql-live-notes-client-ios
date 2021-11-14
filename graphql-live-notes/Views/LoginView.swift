@@ -9,8 +9,11 @@ import SwiftUI
 
 struct LoginView: View {
     // MARK: - Propertiers
-    @State private var email = ""
-    @State private var password = ""
+//    @State private var email = ""
+//    @State private var password = ""
+    
+    @StateObject private var loginVM = LoginViewModel()
+    @EnvironmentObject var authentication: Authentication
     
     // MARK: - View
     var body: some View {
@@ -29,14 +32,14 @@ struct LoginView: View {
                 .padding(.bottom, 60)
             
             VStack(alignment: .leading, spacing: 15) {
-                TextField("Email", text: self.$email)
+                TextField("Email", text: $loginVM.username)
                     .padding()
                     .background(Color.themeTextField)
                     .foregroundColor(.black)
                     .cornerRadius(20.0)
                     .shadow(radius: 10.0, x: 20, y: 10)
                 
-                SecureField("Password", text: self.$password)
+                SecureField("Password", text: $loginVM.password)
                     .padding()
                     .background(Color.themeTextField)
                     .foregroundColor(.black)
@@ -44,7 +47,11 @@ struct LoginView: View {
                     .shadow(radius: 10.0, x: 20, y: 10)
             }.padding([.leading, .trailing], 27.5)
             
-            Button(action: {}) {
+            Button(action: {
+                loginVM.login { result in
+                    authentication.updateAuth(result: result)
+                }
+            }) {
                 Text("Sign In")
                     .font(.headline)
                     .foregroundColor(.white)
@@ -53,7 +60,12 @@ struct LoginView: View {
                     .background(Color.green)
                     .cornerRadius(15.0)
                     .shadow(radius: 10.0, x: 20, y: 10)
-            }.padding(.top, 50)
+            }
+            .disabled(loginVM.loginDisabled)
+            .padding(.top, 50)
+//            .alert(item: loginVM.$errors) { error in
+//                Alert(title: Text("Invlid Login"), message: Text(error.message))
+//            }
             
             Spacer()
 //            HStack(spacing: 0) {

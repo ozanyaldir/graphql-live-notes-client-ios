@@ -11,7 +11,7 @@ import Apollo
 class NoteDetailViewModel: ObservableObject{
     @Published private var note: GetNoteQuery.Data.Note?
     
-    var id: String{
+    var id: GraphQLID{
         note?.id ?? ""
     }
     var text: String{
@@ -43,9 +43,9 @@ class NoteDetailViewModel: ObservableObject{
 }
 
 struct NoteDetailUserViewModel {
-    fileprivate let user: GetNoteQuery.Data.Note.User
+    fileprivate let user: NoteUser
     
-    var id: String{
+    var id: GraphQLID{
         user.id
     }
     var username: String{
